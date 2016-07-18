@@ -1,0 +1,499 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="../css/bootflat.css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <script type="text/javascript" src="../js/site.min.js"></script>
+    <link rel="stylesheet" id="font-awesome-css" href="http://jobplanet.jegtheme.com/wp-content/plugins/js_composer/assets/lib/bower/font-awesome/css/font-awesome.min.css" type="text/css" media="all">
+    <link rel="stylesheet" type="text/css" href="http://www.uitutorial.com/demos/chosen-demo/chosen.min.css" />
+    <script type='text/javascript' src='http://www.uitutorial.com/demos/chosen-demo/chosen.jquery.min.js'></script>
+    <script type="text/javascript" src="http://jobplanet.jegtheme.com/wp-content/plugins/jobplanet-plugin/assets/js/jquery.datetimepicker.full.min.js"></script>
+    <link rel="stylesheet" id="jeg-datepicker-css-css" href="http://jobplanet.jegtheme.com/wp-content/plugins/jobplanet-plugin/assets/css/jquery.datetimepicker.css" type="text/css" media="all">
+    <script src='https://cdn.tinymce.com/4/tinymce.min.js'></script>
+
+</head>
+
+<body class="page page-id-15 page-template-default logged-in jobplanet wpb-js-composer js-comp-ver-4.9.1 vc_responsive" style="transform: none;">
+
+    <!-- wrapper page -->
+    <div class="wrapper" style="transform: none;">
+
+        <!-- main-header -->
+        <header class="main-header">
+
+            <!-- main navbar -->
+         <?php require( '../header.php') ?>
+            <!-- end main navbar -->
+            <!-- mobile navbar -->
+            <div class="container">
+                <nav class="mobile-nav hidden-md hidden-lg">
+                    <ul class="nav navbar-nav nav-block-left">
+                        <li class="dropdown">
+                            <a href="http://jobplanet.jegtheme.com/account/" class="link-profile dropdown-toggle" data-toggle="dropdown">
+                                <img alt="" src="http://jobplanet.jegtheme.com/wp-content/uploads/2016/01/4-3.jpg" srcset="http://jobplanet.jegtheme.com/wp-content/uploads/2016/01/4-3.jpg 2x" class="avatar avatar-80 photo img-profile" height="80" width="80"> &nbsp; <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="http://jobplanet.jegtheme.com/account/edit-account/"> Edit Account </a></li>
+                                <li><a href="http://jobplanet.jegtheme.com/account/change-password/"> Change Password </a></li>
+                                <li><a href="http://jobplanet.jegtheme.com/account/jobs/"> Job List </a></li>
+                                <li><a href="http://jobplanet.jegtheme.com/account/manage-application/"> Manage Application </a></li>
+                                <li><a href="http://jobplanet.jegtheme.com/account/manage-company/"> Manage Company </a></li>
+                                <li><a href="http://jobplanet.jegtheme.com/account/saved-resume/"> Saved Resume </a></li>
+                                <li><a href="http://jobplanet.jegtheme.com/account/manage-package/">Manage Package</a></li>
+                                <li class="btn-highlight">
+                                    <a href="http://jobplanet.jegtheme.com/create-vacancy/" class="btn-highlight">
+        Create Job Vacancy    </a>
+                                </li>
+                                <li class="btn-highlight">
+                                    <a href="http://jobplanet.jegtheme.com/account/create-company/" class="btn-highlight">
+        Create Company    </a>
+                                </li>
+                                <li class="btn-highlight"><a href="http://jobplanet.jegtheme.com/wp-login.php?action=logout&amp;redirect_to=http%3A%2F%2Fjobplanet.jegtheme.com%2Faccount%2F&amp;_wpnonce=0b92bcf249">Logout</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <a href="#" class="btn-nav-toogle first">
+                        <span class="bars"></span> Menu </a>
+                    <div class="mobile-nav-block">
+                        <h4>Navigation</h4>
+                        <a href="#" class="btn-nav-toogle">
+                            <span class="barsclose"></span> Close </a>
+                        <ul id="menu-primary-1" class="nav navbar-nav">
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-154"><a href="http://jobplanet.jegtheme.com/job-list/">Find Job <span class="caret"></span></a></li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-155"><a href="http://jobplanet.jegtheme.com/resume-list/">Find Resume <span class="caret"></span></a></li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-15 current_page_item menu-item-156"><a href="http://jobplanet.jegtheme.com/create-vacancy/">Create Vacancy <span class="caret"></span></a></li>
+                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-157 dropdown dropdown"><a href="#" data-toggle="dropdown" role="button" class="dropdown-toggle">Pages <span class="caret"></span></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-300"><a href="http://jobplanet.jegtheme.com/select-plan/">Select Plan <span class="caret"></span></a></li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-189"><a href="http://jobplanet.jegtheme.com/about-us/">About Us <span class="caret"></span></a></li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-206"><a href="http://jobplanet.jegtheme.com/contact/">Contact Us <span class="caret"></span></a></li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-207"><a href="http://jobplanet.jegtheme.com/term-of-service/">Term &amp; Privacy <span class="caret"></span></a></li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-198"><a href="http://jobplanet.jegtheme.com/blog/">Article &amp; Blog <span class="caret"></span></a></li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-464"><a href="http://jobplanet.jegtheme.com/company-listing/">Company Listing <span class="caret"></span></a></li>
+                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-161"><a href="http://jobplanet.jegtheme.com/404">Error 404 <span class="caret"></span></a></li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-208"><a href="http://jobplanet.jegtheme.com/shortcode/">Shortcode <span class="caret"></span></a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-158 dropdown dropdown"><a href="#" data-toggle="dropdown" role="button" class="dropdown-toggle">Features <span class="caret"></span></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-160"><a href="http://jobplanet.jegtheme.com/shop/">Shop Page <span class="caret"></span></a></li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-15 current_page_item menu-item-307"><a href="http://jobplanet.jegtheme.com/create-vacancy/">Create Job <span class="caret"></span></a></li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-301"><a href="http://jobplanet.jegtheme.com/job-list/">Ajax Job Search <span class="caret"></span></a></li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-302"><a href="http://jobplanet.jegtheme.com/resume-list/">Ajax Resume Search <span class="caret"></span></a></li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-job menu-item-305"><a href="http://jobplanet.jegtheme.com/job/ios-applications-developer/">Job Detail <span class="caret"></span></a></li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-resume menu-item-303"><a href="http://jobplanet.jegtheme.com/resume/senior-database-manager/">Resume Detail <span class="caret"></span></a></li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-company menu-item-306"><a href="http://jobplanet.jegtheme.com/company/dream-estate-property/">Company Detail <span class="caret"></span></a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <!-- mobile navbar -->
+            <div class="container">
+                <div class="text-center logo">
+                    <a href="http://jobplanet.jegtheme.com/">
+                        <img class="logo-desktop" alt="Responsive Job Board WordPress Themes" src="http://jobplanet.jegtheme.com/wp-content/themes/jobplanet-themes/assets/theme/images/logo.png" data-at2x="http://jobplanet.jegtheme.com/wp-content/themes/jobplanet-themes/assets/theme/images/logo.png">
+                        <img class="logo-mobile" alt="Responsive Job Board WordPress Themes" src="http://jobplanet.jegtheme.com/wp-content/themes/jobplanet-themes/assets/theme/images/logo.png" data-at2x="http://jobplanet.jegtheme.com/wp-content/themes/jobplanet-themes/assets/theme/images/logo.png">
+                    </a>
+                </div>
+            </div>
+
+        </header>
+        <!-- end main-header -->
+        <!-- body-content -->
+        <div class="body-content clearfix" style="transform: none;">
+            <div class="bg-color2 block-section line-bottom progress-step">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <ol class="progress-meter ">
+                                <li class="progress-point done">Login / Register</li>
+                                <!--
+
+                                        -->
+                                <li class="progress-point done">
+                                    <a href="http://jobplanet.jegtheme.com/create-vacancy/package/">Package</a> </li>
+                                <!--
+                                        -->
+                                <li class="progress-point done">
+                                    <a href="http://jobplanet.jegtheme.com/create-vacancy/company/">Company</a> </li>
+                                <!--
+                                        -->
+                                <li class="progress-point done">
+                                    <a href="http://jobplanet.jegtheme.com/create-vacancy/vacancy/">Vacancy</a> </li>
+                                <!--
+                    
+                    -->
+                                <li class="progress-point done">Review</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-color2" style="transform: none;">
+                <div class="container" style="transform: none;">
+                    <div class="row" style="transform: none;">
+                        <div class="col-md-9 content" style="position: relative; overflow: visible; box-sizing: border-box; min-height: 1px;">
+
+                            <!-- box item details -->
+                            <div class="block-section box-item-details theiaStickySidebar sticky-content" style="padding-top: 0px; padding-bottom: 0px; position: static;">
+
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="company-logo">
+                                            <a href="http://jobplanet.jegtheme.com/company/hli/">
+                                                <img src="" alt="hli">
+                                                <iframe id="tmp_downloadhelper_iframe" style="display: none;"></iframe>
+                                            </a>
+                                        </div>
+                                        <div class="company-title text-right">
+                                            <h4>
+                                    <a href="http://jobplanet.jegtheme.com/company/hli/">
+                                        hli                                    </a>
+                                </h4>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <h2 class="title"><a href="http://jobplanet.jegtheme.com/job/fe/">fe</a></h2>
+                                <div class="job-meta">
+                                    <ul class="list-inline">
+
+                                        <li><i class="fa fa-briefcase"></i>&nbsp;&nbsp;Contract</li>
+                                        <li><i class="fa fa-map-marker"></i>&nbsp;&nbsp;California</li>
+                                        <li style="padding-right: 0;">
+                                            <i class="fa fa-money"></i>&nbsp;&nbsp;$22 – $88 <span class="salary-range-detail">hourly</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <p><strong>About Us</strong> phasellus dapibus lacus eu nisl congue elementum. Integer at massa eu arcu vestibulum posuere id sagittis orci. Praesent at lorem nec ante scelerisque hendrerit non quis ante. Pellentesque pharetra rhoncus ante. Nulla ac nibh efficitur dui tristique auctor. Mauris interdum sapien non maximus feugiat. Vestibulum bibendum mauris leo, vel fermentum est congue nec.</p>
+                                <p><strong>Job Description</strong> vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Etiam mollis tortor non nunc convallis, eget volutpat nunc semper.</p>
+                                <h4>What you will do:</h4>
+                                <ul>
+                                    <li>Phasellus dapibus lacus eu nisl congue elementum</li>
+                                    <li>Integer at massa eu arcu vestibulum posuere id sagittis orci</li>
+                                    <li>Nulla feugiat blandit felis non lacinia</li>
+                                </ul>
+                                <h4>Skill We are looking for:</h4>
+                                <ul>
+                                    <li>Phasellus dapibus lacus eu nisl congue elementum</li>
+                                    <li>Integer at massa eu arcu vestibulum posuere id sagittis orci</li>
+                                    <li>Nulla feugiat blandit felis non lacinia</li>
+                                </ul>
+                                <h4>Our Company Benefit:</h4>
+                                <ul>
+                                    <li>Phasellus dapibus lacus eu nisl congue elementum</li>
+                                    <li>Integer at massa eu arcu vestibulum posuere id sagittis orci</li>
+                                    <li>Nulla feugiat blandit felis non lacinia</li>
+                                </ul>
+
+                                <h3 class="title" id="cp-photos">Job &amp; Company Detail</h3>
+                                <div class="row">
+                                    <div class="col-sm-6">
+
+                                        <!-- industry -->
+                                        <h5>Company Industry</h5>
+                                        <p>
+                                            Accounting </p>
+
+                                        <!-- company size -->
+                                        <h5>Company Size</h5>
+                                        <p>
+                                            1 - 9 Employees </p>
+
+                                        <!-- language -->
+                                        <h5>Language</h5>
+                                        <p>
+                                            – </p>
+                                    </div>
+                                    <div class="col-sm-6">
+
+                                        <!-- category -->
+                                        <h5>Job Category</h5>
+                                        <p>
+                                            Advertising, Arts &amp; Media </p>
+
+                                        <!-- closing date -->
+                                        <h5>Applications Accepted Until</h5>
+                                        <p>
+                                            – </p>
+                                    </div>
+                                </div>
+
+                                <!-- company galery photos-->
+                            </div>
+                            <!-- end box item details -->
+                        </div>
+                        <div class="col-md-3 sidebar" style="position: relative; overflow: visible; box-sizing: border-box; min-height: 694.5px;">
+                            <!-- box affix right -->
+
+                            <div class="block-section theiaStickySidebar sticky-sidebar" style="padding-top: 0px; padding-bottom: 0px; position: fixed; top: 30px; left: 901.5px; width: 262px;">
+
+                                <div class="text-right">
+                                    <p><a href="http://jobplanet.jegtheme.com/checkout/" class="btn btn-theme btn-t-primary btn-block-xs">Continue To Payment</a></p>
+                                    <p><a href="http://jobplanet.jegtheme.com/create-vacancy/vacancy/" class="btn btn-theme btn-line dark btn-block-xs">Edit This Vacancy</a></p>
+                                </div>
+                            </div>
+                            <!-- box affix right -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- block map -->
+            <div class="collapse" id="map-toogle">
+                <div class=" bg-color2" id="map-area">
+                    <div class="container">
+                        <div class="marker-description">
+                            <div class="inner">
+                                <h4 class="no-margin-top">Office Location</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="map-area-detail">
+                        <div class="box-map-detail" id="map-detail-job" data-lat="40.712597" data-lng="-74.00303500000001"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- end block map -->
+        </div>
+        <!--end body-content -->
+
+
+
+
+        <footer class="footer-widget text-center-sm">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-sm-4">
+                        <div class="footer-widget-content widget widget_jeg_about_me" id="jeg_about_me-3">
+                            <div class="about-us-widget">
+                                <div class="about-image">
+                                    <img src="http://jobplanet.jegtheme.com/wp-content/uploads/2016/01/jonplanet-logo-blue.png" alt="">
+                                </div>
+                                <div class="about-description">
+                                    JobPlanet - Responsive JobBoard WordPress Themes. Quisque eget lacus turpis. Curabitur ac pretium felis, vel lobortis leo. Praesent quis mi viverra, sodales mi id, dapibus tortor. Mauris sed venenatis dui. Aliquam sed convallis erat. </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="footer-widget-content widget widget_nav_menu" id="nav_menu-3">
+                            <h3 class="widget-title">Job by Location</h3>
+                            <div class="menu-location-menu-container">
+                                <ul id="menu-location-menu" class="menu">
+                                    <li id="menu-item-276" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-276"><a href="http://jobplanet.jegtheme.com/job-location/los-angeles/">Los Angeles, California</a></li>
+                                    <li id="menu-item-277" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-277"><a href="http://jobplanet.jegtheme.com/job-location/oakland/">Oakland, California</a></li>
+                                    <li id="menu-item-278" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-278"><a href="http://jobplanet.jegtheme.com/job-location/san-francisco/">San Francisco, California</a></li>
+                                    <li id="menu-item-279" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-279"><a href="http://jobplanet.jegtheme.com/job-location/san-jose/">San Jose, California</a></li>
+                                    <li id="menu-item-280" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-280"><a href="http://jobplanet.jegtheme.com/job-location/binghamton/">Bringhamton, New York</a></li>
+                                    <li id="menu-item-281" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-281"><a href="http://jobplanet.jegtheme.com/job-location/long-beach/">Long Beach, New York</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="footer-widget-content widget widget_tag_cloud" id="tag_cloud-3">
+                            <h3 class="widget-title">Tag Cloud</h3>
+                            <div class="tagcloud"><a href="http://jobplanet.jegtheme.com/tag/assessment/" class="tag-link-153" title="1 topic" style="font-size: 8pt;">assessment</a>
+                                <a href="http://jobplanet.jegtheme.com/tag/bos/" class="tag-link-128" title="1 topic" style="font-size: 8pt;">bos</a>
+                                <a href="http://jobplanet.jegtheme.com/tag/classy/" class="tag-link-129" title="1 topic" style="font-size: 8pt;">classy</a>
+                                <a href="http://jobplanet.jegtheme.com/tag/deal/" class="tag-link-130" title="2 topics" style="font-size: 22pt;">deal</a>
+                                <a href="http://jobplanet.jegtheme.com/tag/distraction/" class="tag-link-131" title="1 topic" style="font-size: 8pt;">distraction</a>
+                                <a href="http://jobplanet.jegtheme.com/tag/dozen/" class="tag-link-132" title="1 topic" style="font-size: 8pt;">dozen</a>
+                                <a href="http://jobplanet.jegtheme.com/tag/excel/" class="tag-link-133" title="1 topic" style="font-size: 8pt;">excel</a>
+                                <a href="http://jobplanet.jegtheme.com/tag/first-day/" class="tag-link-134" title="1 topic" style="font-size: 8pt;">first day</a>
+                                <a href="http://jobplanet.jegtheme.com/tag/focus/" class="tag-link-135" title="1 topic" style="font-size: 8pt;">focus</a>
+                                <a href="http://jobplanet.jegtheme.com/tag/holiday/" class="tag-link-136" title="1 topic" style="font-size: 8pt;">holiday</a>
+                                <a href="http://jobplanet.jegtheme.com/tag/impression/" class="tag-link-137" title="1 topic" style="font-size: 8pt;">impression</a>
+                                <a href="http://jobplanet.jegtheme.com/tag/job/" class="tag-link-138" title="1 topic" style="font-size: 8pt;">job</a>
+                                <a href="http://jobplanet.jegtheme.com/tag/new-job/" class="tag-link-139" title="1 topic" style="font-size: 8pt;">new job</a>
+                                <a href="http://jobplanet.jegtheme.com/tag/office/" class="tag-link-140" title="1 topic" style="font-size: 8pt;">office</a>
+                                <a href="http://jobplanet.jegtheme.com/tag/party/" class="tag-link-141" title="1 topic" style="font-size: 8pt;">party</a>
+                                <a href="http://jobplanet.jegtheme.com/tag/perks/" class="tag-link-142" title="2 topics" style="font-size: 22pt;">perks</a>
+                                <a href="http://jobplanet.jegtheme.com/tag/presentation/" class="tag-link-143" title="1 topic" style="font-size: 8pt;">presentation</a>
+                                <a href="http://jobplanet.jegtheme.com/tag/promotion/" class="tag-link-144" title="1 topic" style="font-size: 8pt;">promotion</a>
+                                <a href="http://jobplanet.jegtheme.com/tag/raise/" class="tag-link-145" title="2 topics" style="font-size: 22pt;">raise</a>
+                                <a href="http://jobplanet.jegtheme.com/tag/resign/" class="tag-link-146" title="1 topic" style="font-size: 8pt;">resign</a>
+                                <a href="http://jobplanet.jegtheme.com/tag/tips/" class="tag-link-147" title="1 topic" style="font-size: 8pt;">tips</a>
+                                <a href="http://jobplanet.jegtheme.com/tag/top/" class="tag-link-148" title="1 topic" style="font-size: 8pt;">top</a>
+                                <a href="http://jobplanet.jegtheme.com/tag/trick/" class="tag-link-149" title="2 topics" style="font-size: 22pt;">trick</a>
+                                <a href="http://jobplanet.jegtheme.com/tag/value/" class="tag-link-150" title="1 topic" style="font-size: 8pt;">value</a>
+                                <a href="http://jobplanet.jegtheme.com/tag/work/" class="tag-link-151" title="1 topic" style="font-size: 8pt;">work</a>
+                                <a href="http://jobplanet.jegtheme.com/tag/workplace/" class="tag-link-152" title="1 topic" style="font-size: 8pt;">workplace</a></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+
+
+        <footer class="main-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        Copyright © Jegtheme 2015. Brands are the property of their respective owners. </div>
+                    <div class="col-sm-6 ">
+                        <p class="text-center-xs hidden-lg hidden-md hidden-sm">Stay Connected</p>
+                        <div class="socials text-right text-center-xs">
+                            <a target="_blank" href="http://facebook.com/jegtheme">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                            <a target="_blank" href="http://twitter.com/jegtheme">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                            <a target="_blank" href="http://plus.google.com/+jegtheme">
+                                <i class="fa fa-google-plus"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- end wrapper page -->
+
+    <div class="scroll-back-to-top-wrapper show">
+        <span class="scroll-back-to-top-inner">
+					<i class="fa fa-2x fa-angle-up"></i>
+			</span>
+    </div>
+    <script></script>
+    <script type="text/javascript" src="http://jobplanet.jegtheme.com/wp-content/plugins/contact-form-7/includes/js/jquery.form.min.js"></script>
+    <script type="text/javascript">
+        /* <![CDATA[ */
+        var _wpcf7 = {
+            "loaderUrl": "http:\/\/jobplanet.jegtheme.com\/wp-content\/plugins\/contact-form-7\/images\/ajax-loader.gif",
+            "recaptchaEmpty": "Please verify that you are not a robot.",
+            "sending": "Sending ..."
+        };
+        /* ]]> */
+    </script>
+    <script type="text/javascript" src="http://jobplanet.jegtheme.com/wp-content/plugins/contact-form-7/includes/js/scripts.js"></script>
+    <script type="text/javascript" src="http://jobplanet.jegtheme.com/wp-content/plugins/jobplanet-plugin/assets/js/jquery.datetimepicker.full.min.js"></script>
+    <script type="text/javascript">
+        /* <![CDATA[ */
+        var joption = {
+            "selectNotFound": "Oops, nothing found",
+            "deleteConfirm": "Are you sure want to Continue?",
+            "limitFile": "Exceed number of allowed file upload. Max file upload is ",
+            "adminurl": "http:\/\/jobplanet.jegtheme.com\/wp-admin\/admin-ajax.php",
+            "date_format": "F j, Y"
+        };
+        /* ]]> */
+    </script>
+    <script type="text/javascript" src="http://jobplanet.jegtheme.com/wp-content/plugins/jobplanet-plugin/assets/js/plugin.js"></script>
+    <script type="text/javascript" src="http://jobplanet.jegtheme.com/wp-content/plugins/jobplanet-plugin/assets/js/plupload/js/plupload.full.min.js"></script>
+    <script type="text/javascript" src="http://jobplanet.jegtheme.com/wp-content/plugins/jobplanet-plugin/assets/js/juploader.js"></script>
+    <script type="text/javascript" src="http://jobplanet.jegtheme.com/wp-content/plugins/jobplanet-plugin/assets/js/jquery.sortable.min.js"></script>
+    <script type="text/javascript" src="http://jobplanet.jegtheme.com/wp-content/plugins/jobplanet-plugin/assets/js/chosen.jquery.js"></script>
+    <script type="text/javascript" src="http://jobplanet.jegtheme.com/wp-content/plugins/jobplanet-plugin/assets/js/kia-metabox.js"></script>
+    <script type="text/javascript">
+        /* <![CDATA[ */
+        var scrollBackToTop = {
+            "scrollDuration": "500",
+            "fadeDuration": "0.5"
+        };
+        /* ]]> */
+    </script>
+    <script type="text/javascript" src="http://jobplanet.jegtheme.com/wp-content/plugins/scroll-back-to-top/assets/js/scroll-back-to-top.js"></script>
+    <script type="text/javascript" src="//jobplanet.jegtheme.com/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js"></script>
+    <script type="text/javascript">
+        /* <![CDATA[ */
+        var woocommerce_params = {
+            "ajax_url": "\/wp-admin\/admin-ajax.php",
+            "wc_ajax_url": "\/create-vacancy\/review\/?wc-ajax=%%endpoint%%"
+        };
+        /* ]]> */
+    </script>
+    <script type="text/javascript" src="//jobplanet.jegtheme.com/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js"></script>
+    <script type="text/javascript" src="//jobplanet.jegtheme.com/wp-content/plugins/woocommerce/assets/js/jquery-cookie/jquery.cookie.min.js"></script>
+    <script type="text/javascript">
+        /* <![CDATA[ */
+        var wc_cart_fragments_params = {
+            "ajax_url": "\/wp-admin\/admin-ajax.php",
+            "wc_ajax_url": "\/create-vacancy\/review\/?wc-ajax=%%endpoint%%",
+            "fragment_name": "wc_fragments"
+        };
+        /* ]]> */
+    </script>
+    <script type="text/javascript" src="//jobplanet.jegtheme.com/wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.min.js"></script>
+    <script type="text/javascript" src="http://jobplanet.jegtheme.com/wp-content/plugins/jobplanet-plugin/assets/js/apply-linkedin.js"></script>
+    <script type="text/javascript">
+        /* <![CDATA[ */
+        var mejsL10n = {
+            "language": "en-US",
+            "strings": {
+                "Close": "Close",
+                "Fullscreen": "Fullscreen",
+                "Download File": "Download File",
+                "Download Video": "Download Video",
+                "Play\/Pause": "Play\/Pause",
+                "Mute Toggle": "Mute Toggle",
+                "None": "None",
+                "Turn off Fullscreen": "Turn off Fullscreen",
+                "Go Fullscreen": "Go Fullscreen",
+                "Unmute": "Unmute",
+                "Mute": "Mute",
+                "Captions\/Subtitles": "Captions\/Subtitles"
+            }
+        };
+        var _wpmejsSettings = {
+            "pluginPath": "\/wp-includes\/js\/mediaelement\/"
+        };
+        /* ]]> */
+    </script>
+    <script type="text/javascript" src="http://jobplanet.jegtheme.com/wp-includes/js/mediaelement/mediaelement-and-player.min.js"></script>
+    <script type="text/javascript" src="http://jobplanet.jegtheme.com/wp-includes/js/mediaelement/wp-mediaelement.js"></script>
+    <script type="text/javascript" src="http://jobplanet.jegtheme.com/wp-includes/js/jquery/ui/core.min.js"></script>
+    <script type="text/javascript" src="http://jobplanet.jegtheme.com/wp-includes/js/jquery/ui/widget.min.js"></script>
+    <script type="text/javascript" src="http://jobplanet.jegtheme.com/wp-includes/js/jquery/ui/mouse.min.js"></script>
+    <script type="text/javascript" src="http://jobplanet.jegtheme.com/wp-includes/js/jquery/ui/slider.min.js"></script>
+    <script type="text/javascript" src="http://jobplanet.jegtheme.com/wp-includes/js/jquery/ui/position.min.js"></script>
+    <script type="text/javascript" src="http://jobplanet.jegtheme.com/wp-includes/js/jquery/ui/menu.min.js"></script>
+    <script type="text/javascript" src="http://jobplanet.jegtheme.com/wp-includes/js/jquery/ui/autocomplete.min.js"></script>
+    <script type="text/javascript" src="http://jobplanet.jegtheme.com/wp-content/themes/jobplanet-themes/assets/plugins/bootstrap-3.3.2/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="http://jobplanet.jegtheme.com/wp-content/themes/jobplanet-themes/assets/plugins/jquery.easing-1.3.pack.js"></script>
+    <script type="text/javascript" src="http://jobplanet.jegtheme.com/wp-content/themes/jobplanet-themes/assets/plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script type="text/javascript" src="http://jobplanet.jegtheme.com/wp-content/themes/jobplanet-themes/assets/plugins/jquery.ba-throttle-debounce.min.js"></script>
+    <script type="text/javascript" src="http://jobplanet.jegtheme.com/wp-content/themes/jobplanet-themes/assets/plugins/theia-sticky-sidebar.js"></script>
+    <script type="text/javascript" src="http://jobplanet.jegtheme.com/wp-content/themes/jobplanet-themes/assets/plugins/owl-carousel/owl.carousel.min.js"></script>
+    <script type="text/javascript">
+        /* <![CDATA[ */
+        var jobplanetoption = {
+            "isie": "",
+            "sharearticle": "Share Article",
+            "templateurl": "http:\/\/jobplanet.jegtheme.com\/wp-content\/themes\/jobplanet-themes",
+            "loading": "loading",
+            "jobBookmarked": "job bookmarked",
+            "failedBookmark": "failed to bookmark",
+            "alredyBookmark": "Job Already Bookmarked",
+            "resumeSaved": "resume saved",
+            "failedSaveResume": "failed to save resume",
+            "alredySavedResume": "Resume Already Saved",
+            "companyFollowed": "company followed",
+            "failedFollowCompany": "failed to follow company",
+            "alreadyFollowCompany": "Already Follow this Company",
+            "sending": "Sending",
+            "send": "Send",
+            "emailsent": "Email Sent",
+            "ajaxurl": "http:\/\/jobplanet.jegtheme.com\/wp-admin\/admin-ajax.php"
+        };
+        /* ]]> */
+    </script>
+    <script type="text/javascript" src="http://jobplanet.jegtheme.com/wp-content/themes/jobplanet-themes/assets/theme/js/theme.js"></script>
+    <script type="text/javascript" src="//maps.google.com/maps/api/js?libraries=places"></script>
+    <script type="text/javascript" src="http://jobplanet.jegtheme.com/wp-content/themes/jobplanet-themes/assets/plugins/gmap3.min.js"></script>
+    <script type="text/javascript" src="http://jobplanet.jegtheme.com/wp-content/themes/jobplanet-themes/assets/theme/js/map-detail.js"></script>
+    <script type="text/javascript" src="http://jobplanet.jegtheme.com/wp-includes/js/comment-reply.min.js"></script>
+    <script type="text/javascript" src="http://jobplanet.jegtheme.com/wp-includes/js/wp-embed.min.js"></script>
+
+</body>
+
+</html>
