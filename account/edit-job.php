@@ -16,7 +16,9 @@ $splitJobCate = explode(',',$jobCate[0]);
 if(isset($_POST['editJobVacancy'])){
 	$updateJobVacancy = "update job set company='".$_POST['company_id']."', Jobtitle = '".$_POST['job_title']."', NotificationEmailAddress = '".$_POST['application_email']."', Jobdescription='".$_POST['content']."', JobType='".$_POST['job_type']."', JobCategories='".implode(',',$_POST['categories'])."', MinimumSalary='".$_POST['salary_bottom']."', MaximumSalary='".$_POST['salary_top']."', SalaryRange='".$_POST['salary_range']."', ClosingDate='".$_POST['closing']."', JobLocation='".$_POST['location']."' where id='".$_GET['item']."'";
 	$result4 = mysqli_query($conn,$updateJobVacancy);
+		$_SESSION['showCompleteMsg'] = 'true';
 	header("location:http://localhost:8080/jobSkillBracket/account/edit-job.php?item=$_GET[item]");
+
 }
 
 ?>
@@ -227,9 +229,9 @@ if(isset($_POST['editJobVacancy'])){
                     </div>
                     <div class="col-md-9 col-sm-9">
                         <div class="block-section box-side-account">
-							
-                            <div class="alert-success alert alert-dismissible fade in" role="alert">Job Vacancy Details Successfully Edited</div>
-							
+							<?php if(isset($_SESSION['showCompleteMsg']) && $_SESSION['showCompleteMsg']=='true'){ echo '<div class="alert-success alert alert-dismissible fade in" role="alert">Job Vacancy Details Successfully Edited</div>'; $_SESSION['showCompleteMsg'] = 'false'; }
+                           echo $_SESSION['showCompleteMsg'];
+							?>
                             <h3>Edit Job Vacancies</h3>
                             <hr>
                             <form method="post" action="">

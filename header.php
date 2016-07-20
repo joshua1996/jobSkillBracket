@@ -48,7 +48,7 @@
                         <li><a href="http://jobplanet.jegtheme.com/account/change-password/"> Change Password </a></li>
                         <li><a href="http://localhost:8080/jobSkillBracket/account/jobs.php"> Job List </a></li>
                         <li><a href="http://jobplanet.jegtheme.com/account/manage-application/"> Manage Application </a></li>
-                        <li><a href="http://jobplanet.jegtheme.com/account/manage-company/"> Manage Company </a></li>
+                        <li><a href="http://localhost:8080/jobSkillBracket/account/manage-company.php?page=1"> Manage Company </a></li>
                         <li><a href="http://jobplanet.jegtheme.com/account/saved-resume/"> Saved Resume </a></li>
                         <li><a href="http://jobplanet.jegtheme.com/account/manage-package/">Manage Package</a></li>
                         <li class="btn-highlight">
